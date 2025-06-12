@@ -1,3 +1,21 @@
-_site
-.sass-cache
-Gemfile.lock
+# Jekyll build outputs
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Dependency directories
+node_modules/
+
+# Environment and system files
+.env
+.DS_Store
+*.swp
+*.swo
+
+# Editor directories
+.vscode/
+.idea/
+
+# Test coverage
+coverage/
