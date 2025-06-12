@@ -1,3 +1,8 @@
-_site
-.sass-cache
-Gemfile.lock
+node_modules/
+dist/
+.env
+__pycache__/
+.DS_Store
+*.log
+.vscode/
+.idea/
