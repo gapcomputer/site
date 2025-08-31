@@ -1,29 +1,25 @@
-baseurl: "/" # The subpath of your site. Use "" if you're hosting a blog at the root level.
-url: "http://ellekasai.github.io" # the base hostname & protocol for your site
-title: "Co-Lab"
+# Site settings
+title: My Jekyll Blog
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A Jekyll blog with default author configuration
 
-# This is used by feed.xml. Uncomment if you want to use it.
-# description: "..."
-
-gems:
-  - jemoji
-exclude:
-  - "README.md"
-  - "CHANGELOG.md"
-  - "CNAME"
-  - "Gemfile"
-  - "Gemfile.lock"
-permalink: :title
+# Default Author Configuration
 defaults:
   -
     scope:
-      path: ""
-      type: "pages"
+      path: "" # an empty string here means all files in the project
+      type: "posts" # limit to posts
     values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+      author:
+        name: "Default Blog Author"
+        bio: "A passionate writer sharing thoughts and insights"
+        avatar: "/assets/images/default-avatar.png"
+        email: "default-author@example.com"
+        twitter: ""
+        linkedin: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
